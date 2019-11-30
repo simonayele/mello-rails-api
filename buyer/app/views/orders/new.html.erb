@@ -1,0 +1,16 @@
+<h1>New Order</h1>
+
+<%= form_for(@order) do |f| %>
+  <p>
+    <%= f.label :total_price %><br>
+    <%= f.number_field :total_price %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </p>
+  
+  <p>
+    <%= f.submit "Pay" %>
+  </p>
+<% end %>

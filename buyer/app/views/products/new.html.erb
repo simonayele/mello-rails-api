@@ -1,0 +1,10 @@
+<div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 card form">
+<h1>New Product</h1>
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name %>
+  <%= f.input :price %>
+  <%= f.input :description %>
+  <%= f.file_field :picture %>
+  <%= f.submit "Submit" %>
+<% end %>
+</div>

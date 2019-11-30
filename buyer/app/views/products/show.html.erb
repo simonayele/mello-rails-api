@@ -1,0 +1,28 @@
+<%= @product.inspect %>
+
+
+<div class="booyah-box col-10 offset-1">
+  
+    <h1><%= @product.name %></h1>
+    <%= image_tag @product.picture.to_s, class: 'img-fluid' %>
+    <br />
+    <div class="row">
+    <div class="col-sm-4 col-12 text-center">
+    <span class="badge badge-default">
+      <%= number_to_currency @product.price %>
+    </span>
+    <br/>
+    <p>
+      <%= @product.description %>
+    </p>
+    
+    
+    
+      
+    </div>
+   
+   
+
+</div>
+</div>
+</div>
